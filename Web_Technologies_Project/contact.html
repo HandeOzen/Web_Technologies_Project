@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <script src="js/script.js"></script>
+  </head>
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Hande Ozen / Feyzanur Sirin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="city.html">CITY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourlegacy.html">OUR LEGACY</a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">CV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">LOG IN</a>
+        </li>
+    </div>  
+  </nav>
+
+  <div class="ortayazi" style="float: center;padding-right: 40%;padding-top:5%">
+    <form name="iletisimFormu" action="iletisimbilgileri.php" method="POST" style="text-align:right" onsubmit="return iletisimKontrol()">
+      Name : <input type="text" name="ad" value="" placeholder="Name"><br/><br/>
+      Surname : <input type="text" name="surname" value="" placeholder="Surname"><br/><br/>
+      Gender : <input type="radio" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+      How did you discover our site? <br>
+      <input type="checkbox" name="discover" value="Because of homework">
+      <label> Homework</label>
+      <input type="checkbox" name="discover" value="at the recommendation">
+      <label> Recommandation</label>
+      <input type="checkbox" name="discover" value="Social Media">
+      <label> Media</label><br><br>
+      Mail : <input type="email" name="mail" value="" placeholder="Mail"><br/> <br/>
+      Telephone number : <input type="number" name="telephone" value="" placeholder="Telelphone number"><br/><br/>
+      Password : <input type="password" name="password" value="" placeholder="Password"><br/><br/>
+      Message : <textarea name="message" rows="10" cols="30"></textarea><br><br>
+      <input type="submit" name="Submit">
+  </form> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
